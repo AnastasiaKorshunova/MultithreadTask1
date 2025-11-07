@@ -1,7 +1,7 @@
 package org.example;
 
 // Task 4
-class Task4ThreadParameters {
+public class Task4ThreadParameters {
     public static void runDemo() throws InterruptedException {
         String[][] sequences = {
                 {"A1", "A2", "A3"},

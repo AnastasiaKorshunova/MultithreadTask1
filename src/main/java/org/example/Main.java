@@ -31,8 +31,7 @@ public class Main {
         System.out.println("\n=== Task 7 ===");
         Task7Yield.runDemo();
 
-//        System.out.println("\n=== Task 8 ===");
-//        Task8ProducerConsumer.runDemo();
+        System.out.println("\n=== Task 8 ===");
+        Task8ProducerConsumer.runDemo();
     }
-
 }

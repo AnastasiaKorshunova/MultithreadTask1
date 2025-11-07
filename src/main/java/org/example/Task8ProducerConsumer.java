@@ -5,7 +5,7 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-class Task8ProducerConsumer {
+public class Task8ProducerConsumer {
     public static void runDemo() throws InterruptedException {
         final long M = 200;    // задержка переключения (мс)
         final long K = 2000;   // старт обратного отсчёта

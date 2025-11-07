@@ -1,7 +1,7 @@
 package org.example;
 
 // Task 6
-class Task6Priority {
+public class Task6Priority {
     public static void runDemo() throws InterruptedException {
         Runnable busy = () -> {
             long end = System.nanoTime() + TimeUnit.MILLISECONDS.toNanos(1500);

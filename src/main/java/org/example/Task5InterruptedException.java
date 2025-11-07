@@ -1,7 +1,7 @@
 package org.example;
 
 // Task 5
-class Task5InterruptedException {
+public class Task5InterruptedException {
     public static void runDemo() throws InterruptedException {
         Thread worker = new Thread(() -> {
             for (int i = 0; i < 100_000_000; i++) {

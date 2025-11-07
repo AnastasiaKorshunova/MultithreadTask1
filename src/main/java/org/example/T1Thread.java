@@ -1,7 +1,7 @@
 package org.example;
 
 // Task 2 — Thread vs Runnable
-class T1Thread extends Thread {
+public class T1Thread extends Thread {
     public T1Thread(Runnable target) {
         super(target);
     }

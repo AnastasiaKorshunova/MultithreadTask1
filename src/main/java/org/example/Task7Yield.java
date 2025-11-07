@@ -3,7 +3,7 @@ package org.example;
 import java.util.concurrent.TimeUnit;
 
 // Task 7 — yield
-class Task7Yield {
+public class Task7Yield {
     public static void runDemo() throws InterruptedException {
         Runnable withYield = () -> {
             long end = System.nanoTime() + TimeUnit.MILLISECONDS.toNanos(1500);
