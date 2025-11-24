@@ -27,13 +27,13 @@ public class ProducerConsumerDemo {
      * @throws InterruptedException if the main thread is interrupted while waiting
      */
     public static void runDemo() throws InterruptedException {
-        final long M = 1000; // delay in milliseconds for producer (toggle)
-        final long K = 5000; // initial countdown time in milliseconds
-        final long step = M / 10; // M/10 delay and countdown step
+        final long m = 1000; // delay in milliseconds for producer (toggle)
+        final long k = 5000; // initial countdown time in milliseconds
+        final long step = m / 10; // m/10 delay and countdown step
 
-        SharedState state = new SharedState(K);
+        SharedState state = new SharedState(k);
 
-        Producer producer = new Producer(state, M);
+        Producer producer = new Producer(state, m);
         Consumer consumer = new Consumer(state, step);
 
         producer.start();

@@ -16,13 +16,13 @@ package lt.scde.multithreading1.task8;
 public class Producer extends Thread {
 
     private final SharedState state;
-    private final long M;
+    private final long m;
     private int switchCount = 0;
 
-    public Producer(SharedState state, long M) {
+    public Producer(SharedState state, long m) {
         super("Producer");
         this.state = state;
-        this.M = M;
+        this.m = m;
     }
 
     @Override
@@ -30,7 +30,7 @@ public class Producer extends Thread {
         try {
             while (true) {
 
-                Thread.sleep(M);  // delay before switching
+                Thread.sleep(m);  // delay before switching
 
                 synchronized (state.lock) {
                     if (state.getRemaining() <= 0) {
