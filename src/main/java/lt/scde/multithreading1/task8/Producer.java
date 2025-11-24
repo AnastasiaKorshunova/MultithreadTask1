@@ -17,7 +17,7 @@ public class Producer extends Thread {
 
     private final SharedState state;
     private final long M;
-    private int switchCount = 0;   // счётчик переключений
+    private int switchCount = 0;
 
     public Producer(SharedState state, long M) {
         super("Producer");
